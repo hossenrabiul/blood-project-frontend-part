@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Data.Doner - Online  </title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="/src/images/data.doner.webp" type="image/x-icon"> 
 
@@ -21,6 +22,10 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
         <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+        <style>
+           
+        </style>
         
 
 </head>
@@ -78,7 +83,7 @@
 
                 <!-- Hero Image -->
                 <div class="relative mt-10 md:mt-0  transform hover:scale-105 transition duration-500 md:w-1/2">
-                    <img src="images/doctor.png" alt="Blood Donation"
+                    <img src="./images/viris2.png" alt="Blood Donation"
                         class="rounded-xl  w-full max-w-md mx-auto">
                 </div>
 
@@ -98,31 +103,71 @@
 
 
         <!-- Statistics Section -->
-        <section class="bg-gray-100 py-10 pt-28  ">
+      
+        <section class=" py-10 pt-28  bg-gray-100">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Impact So Far</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-white p-6 rounded-lg shadow">
-                        <h3 class="text-xl font-semibold text-red-500">Total Donors</h3>
-                        <p id="total_user" class="text-3xl font-bold text-gray-800 mt-2">12,345</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow">
-                        <h3 class="text-xl font-semibold text-red-500">Blood Units Donated</h3>
-                        <p id="total_event" class="text-3xl font-bold text-gray-800 mt-2">8,765</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow">
-                        <h3 class="text-xl font-semibold text-red-500">Lives Saved</h3>
-                        <p id="total_event_completed" class="text-3xl font-bold text-gray-800 mt-2">4,321</p>
+                <div class="swiffy-slider slider-item-show3 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein">
+                    <ul class="slider-container py-4">
+                        <li class="">
+                            <div class="card shadow h-100 text-center">
+                                <div class="icon purple mb-3" style="font-size: 40px;">💉</div>
+                                <div class="card-body p-3">
+                                    <h3 class="card-title h5">Donate Blood</h3>
+                                    <p class="card-text">Help save lives by donating blood to those in need.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="card shadow h-100 text-center">
+                                <div class="icon red mb-3" style="font-size: 40px;">🔍</div>
+                                <div class="card-body p-3">
+                                    <h3 class="card-title h5">Search For Blood</h3>
+                                    <p class="card-text">Find blood donors and resources in your area easily.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="card shadow h-100 text-center">
+                                <div class="icon blue mb-3" style="font-size: 40px;">📋</div>
+                                <div class="card-body p-3">
+                                    <h3 class="card-title h5">Patient List</h3>
+                                    <p class="card-text">Access a list of patients requiring urgent blood donations.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <button type="button" class="slider-nav" aria-label="Go left"></button>
+                    <button type="button" class="slider-nav slider-nav-next" aria-label="Go right"></button>
+                
+                    <div class="slider-indicators">
+                        <button aria-label="Go to slide" class="active"></button>
+                        <button aria-label="Go to slide"></button>
+                        <button aria-label="Go to slide"></button>
                     </div>
                 </div>
+                
             </div>
         </section>
 
         <!-- How It Works Section -->
-        <section class="bg-white py-10">
+        <section class="blood-donation-section ">
+            <div class="left-side">
+                <h2>Process</h2>
+                <h3>How It Works</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam veniam tenetur perspiciatis quas illum, eos natus quod eum eius libero tempore minima delectus sint</p>
+            </div>
+            <div class="right-side">
+                <img src="./images/viris2.png" alt="Blood Donation">
+            </div>
+        </section>
+        
+        <!-- <section class="bg-white py-10">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold text-gray-800 mb-6">How It Works</h2>
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+                    
                     <div class="p-6">
                         <div
                             class="w-16 h-16 mx-auto bg-red-100 text-red-500 rounded-full flex items-center justify-center">
@@ -157,7 +202,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <footer > </footer>  
     
     <script src="src/js/static_data.js"> </script>

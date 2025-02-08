@@ -1,0 +1,78 @@
+.icon {
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+}
+.icon.purple {
+    background-color: #7d3cff;
+}
+.icon.red {
+    background-color: #ff4d4d;
+}
+.icon.blue {
+    background-color: #00bcd4;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+.slider-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.card-body p {
+    color: #555;
+    font-size: 14px;
+}
+
+.blood-donation-section {
+    width: 1200px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 10px; */
+    padding: 20px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.left-side {
+    width: 45%;
+    font-family: Arial, sans-serif;
+}
+
+.left-side h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff4d4d; /* Red color for emphasis */
+    margin-bottom: 10px;
+}
+
+.left-side h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.left-side p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.right-side {
+    width: 45%;
+}
+
+.right-side img {
+    width: 100%;
+    border-radius: 10px;
+}
