@@ -90,7 +90,7 @@ const setDistrict = () => {
       // Build query string from the search object
       const queryString = new URLSearchParams(search).toString();
   
-      fetch(`http://blood-project.onrender.com/accounts/profiles/?${queryString}`)
+      fetch(`https://blood-project-1das.vercel.app/accounts/profiles/?${queryString}`)
           .then((res) => res.json())
           .then((data) => searchResult(data, search))
           .catch((error) => {

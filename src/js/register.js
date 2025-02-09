@@ -37,7 +37,7 @@ if ('token' in localStorage)
       };
   
       // Send the user data to the API using fetch
-      fetch("https://blood-project.onrender.com/accounts/register/", {
+      fetch("https://blood-project-1das.vercel.app/accounts/register/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

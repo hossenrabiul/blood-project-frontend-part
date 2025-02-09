@@ -19,11 +19,45 @@
 
 </head>
 
-<body class="bg-teal-50" style=" font-family: 'Jost', serif;">
-    <header class=" bg-gradient-to-r from-teal-200 to-white  shadow-md text-black text-md">
+<body class="bg-gray-50" style=" font-family: 'Jost', serif;">
+
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <div class="text-2xl font-bold text-gray-700">Blood Donation</div>
+
+              <div id="upper-header-authentication"> </div>
+
+            <div class="flex gap-8"> 
+            <div id="header-authentication"> </div>
+
+            </div>
+
+            <!-- <nav>
+                <ul class="flex space-x-6 text-gray-600">
+                    <li><a href="#" class="hover:text-red-500">Donation</a></li>
+                    <li><a href="#" class="hover:text-red-500">Features</a></li>
+                    <li><a href="#" class="hover:text-red-500">Volunteer</a></li>
+                    <li><a href="#" class="hover:text-red-500">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="space-x-4">
+                <a href="/login.html" class="text-gray-600 hover:text-red-500">Log In</a>
+                <a href="/register.html" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">Sign Up</a>
+            </div> -->
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+    <!-- <header class=" bg-gradient-to-r from-teal-200 to-white  shadow-md text-black text-md">
 
         <div class="container  mx-auto flex justify-between items-center py-4 px-6 text-gray-800">
-        <!-- Logo -->
+      
         <a href="/index.html" class="flex items-center space-x-2 gap-4">
             <img src="images/blood.png" alt="" class="w-16 h-16 ">
             <span class="text-2xl font-bold tracking-wide" style="font-family: 'Roboto Condensed', serif;">Blood Center</span>
@@ -33,11 +67,50 @@
         <div id="header-authentication"> </div>
  
         </div> 
-    </header>
+    </header> -->
 
- 
+
     <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-8 m-auto my-8 px-12 mb-20">
         <!-- Logo -->
+        <div class="text-center mb-6">
+            <h1 class="text-3xl font-bold text-gray-800">Login</h1>
+            <p class="text-sm text-gray-600 mt-2">Welcome back! Please login to your account.</p>
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="space-y-6">
+            <div>
+                <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                <input type="text" id="username" name="username" 
+                       class="w-full mt-2 p-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:outline-none transition duration-200" 
+                       placeholder="Enter your username" required>
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" id="password" name="password" 
+                       class="w-full mt-2 p-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:outline-none transition duration-200" 
+                       placeholder="Enter your password" required>
+            </div>
+            <button type="submit" 
+                    class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition duration-300">
+                Login
+            </button>
+        </form>
+
+        <!-- Error Message -->
+        <p id="errorMsg" class="text-red-500 text-sm mt-4 hidden">Invalid username or password</p>
+
+        <!-- Footer -->
+        <div class="text-center mt-6">
+            <p class="text-sm text-gray-600">
+                Don't have an account? 
+                <a href="/register.html" class="text-blue-500 font-medium hover:underline">Register Now</a>
+            </p>
+        </div>
+    </div>
+ 
+    <!-- <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-8 m-auto my-8 px-12 mb-20">
+      
         <div class="text-center mb-6">
           <h1 class="text-2xl font-bold mb-4 text-center">Login</h1>
         </div>
@@ -63,18 +136,18 @@
         </form>
         <p id="errorMsg" class="text-red-500 text-sm mt-4 hidden"></p>
 
-        <!-- Footer -->
+        
         <div class="text-center mt-6">
             <p class="text-sm text-gray-600">
               Don't have an account? 
               <a href="/register.html" class="text-red-500 font-medium hover:underline">Register Now</a>
             </p>
           </div>
-    </div>
+    </div> -->
     <footer></footer> 
     
     <script src="src/js/header.js"></script>
-    <script src="src/js/footer.js"></script>
+   
     <script src="src/js/login.js"> </script>
 
     

@@ -3,7 +3,7 @@ const handlelogOut = () => {
     const token = localStorage.getItem("token"); 
 
     console.log("logout working")
-    fetch("https://blood-project.onrender.com/accounts/logout/", {
+    fetch("https://blood-project-1das.vercel.app/accounts/logout/", {
       method: "POST",
       headers: {
         Authorization: `Token ${token}`,

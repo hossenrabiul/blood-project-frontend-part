@@ -13,14 +13,14 @@ const eventGenderator = (filter={}) => {
         </div>
     `;
     
-    fetch('https://blood-project.onrender.com/event/events/?status=Ongoing')
+    fetch('https://blood-project-1das.vercel.app/event/events/?status=Ongoing')
         .then(res => res.json())
         .then(data => showAllEvent(data,filter))
         .catch(error => console.log(error));
 }
 const findEventUser =  (user_id) => {
   const username = ''
-  fetch(`http://blood-project.onrender.com/accounts/users/?user_id=${user_id}`)
+  fetch(`https://blood-project-1das.vercel.app/accounts/users/?user_id=${user_id}`)
     .then(r => r.json())
     .then(d => username = d[0].username)
   
@@ -48,7 +48,7 @@ const showAllEvent = (data,filter={}) => {
     }
 
     const created_by = findEventUser(event.user);
-          fetch(`http://blood-project.onrender.com/accounts/users/?id=${event.user}`)
+          fetch(`https://blood-project-1das.vercel.app/accounts/users/?id=${event.user}`)
             .then(res => res.json())
             .then(data => {
 
@@ -128,7 +128,7 @@ function analysisEvent(blood) {
 
 const acceptEvent = (event_id, user_id,event_blood) => {
 
-  fetch(`http://blood-project.onrender.com/accounts/profiles/?user_id=${user_id}`)
+  fetch(`https://blood-project-1das.vercel.app/event/events/?user_id=${user_id}`)
     .then(r => r.json())
     .then(data => {
       const user = data[0]; 
@@ -153,7 +153,7 @@ const acceptEvent = (event_id, user_id,event_blood) => {
         'doner_message':'',
       }
 
-      fetch(`https://blood-project.onrender.com/event/events/${event_id}/accepted/`, {
+      fetch(`https://blood-project-1das.vercel.app/event/events/${event_id}/accepted/`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json', // Ensure the request is sent as JSON

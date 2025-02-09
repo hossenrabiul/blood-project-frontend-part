@@ -18,30 +18,86 @@
 
 </head>
 
-<body class="bg-teal-50" style=" font-family: 'Jost', serif;">
-  <body class="bg-teal-50" style=" font-family: 'Jost', serif;">
-    <header class="bg-gradient-to-r from-teal-200 to-white shadow-md text-black text-md fixed top-0 left-0 w-full z-10">
-        <div class="container mx-auto flex justify-between items-center py-4 px-6 text-gray-800">
-            <!-- Logo -->
-            <a href="/index.html" class="flex items-center space-x-2 gap-4">
-              <img src="images/blood.png" alt="" class="w-16 h-16 ">
-              <span class="text-2xl font-bold tracking-wide" style="font-family: 'Roboto Condensed', serif;">Blood Center</span>
-          </a>
-    
-            <div id="upper-header-authentication"> </div>
-            <div id="header-authentication"> </div>
-        </div> 
-    </header> 
+<body class="bg-gray-50" style=" font-family: 'Jost', serif;">
+  <body class="bg-gray-50" style=" font-family: 'Jost', serif;">
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto flex items-center justify-between p-4">
+          <div class="text-2xl font-bold text-gray-700">Blood Donation</div>
 
+            <div id="upper-header-authentication"> </div>
+
+          <div class="flex gap-8"> 
+          <div id="header-authentication"> </div>
+
+          </div>
+      </div>
+  </header>
 
     <main class="mt-28 md:px-36">
-        <section class="w-full md:max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-lg text-md">
+
+      <section class="w-full max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-lg"> 
+       
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="relative w-28 h-28 rounded-full border-4 border-white shadow-md overflow-hidden">
+            <img id="profile-image" src="" alt="Profile Image" class="w-full h-full object-cover">
+          </div>
+          <h1 id="username" class="text-2xl font-bold text-gray-800">Anonymous</h1>
+          <p class="text-sm text-gray-600">Blood Group: <span id="blood-group" class="font-semibold text-red-600"></span></p>
+        </div>
+        
+      
+        <div class="grid grid-cols-3 gap-4 mt-6">
+          <div class="bg-gray-100 p-4 rounded-lg text-center">
+            <p id="total-donations" class="text-xl font-bold text-red-500">0</p>
+            <p class="text-gray-600 text-sm">Total Donations</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg text-center">
+            <p id="fulfilled-requests" class="text-xl font-bold text-red-500">0</p>
+            <p class="text-gray-600 text-sm">Requests Fulfilled</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg text-center">
+            <p id="last-donation-date" class="text-xl font-bold text-red-500">N/A</p>
+            <p class="text-gray-600 text-sm">Last Donation</p>
+          </div>
+        </div>
+      
+       
+        <div class="mt-8 space-y-4">
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <p class="text-gray-600">Full Name</p>
+            <p id="full-name" class="font-medium"></p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <p class="text-gray-600">Email</p>
+            <p id="user-email" class="font-medium"></p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <p class="text-gray-600">Phone</p>
+            <p id="user-phone" class="font-medium"></p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <p class="text-gray-600">Location</p>
+            <p id="user-location" class="font-medium"></p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <p class="text-gray-600">Age, Gender</p>
+            <p id="age-gender" class="font-medium"></p>
+          </div>
+        </div>
+      
+  
+        <div class="mt-6 flex justify-center gap-4 text-gray-800">
+          <a href="#" class="text-blue-500 text-2xl"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-blue-600 text-2xl"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-blue-700 text-2xl"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </section> 
+      
+
+        <!-- <section class="w-full md:max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-lg text-md">
           <div class="container mx-auto bg-white lg:px-12 rounded-xl overflow-hidden py-6  ">
             <div class="grid md:grid-cols-12 items-center gap-2 lg:gap-4">
-              <!-- Profile Image -->
-            
-      
-              <!-- User Details Section -->
+  
               <div class="col-span-12 md:col-span-7  flex justify-around items-center gap-2 text-sm mx-4 px-4 text-center">
                 <div class="bg-teal-100 rounded-xl p-4 lg:p-6 hover:shadow-lg transition-all duration-300 transform hover:scale-105 m-2 md:m-0">
                   <p id="total-donations" class="text-md md:text-2xl font-bold text-red-500">0</p>
@@ -57,13 +113,12 @@
                 </div>
               </div>
             </div>
-            <!-- -->
+       
 
           <div class="pt-8 px-4">
             <h2 class="text-lg font-semibold mb-4 text-gray-800">User Details</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 ">
 
-              <!-- User Details --> 
                 <div class="flex flex-col gap-2"> 
                   <div class="bg-gray-50 px-4 py-2 rounded-lg shadow">
                     <p class="text-gray-600">Name</p>
@@ -74,20 +129,20 @@
                     <p id="user-email" class="font-medium"></p>
                   </div>
                   <div class="bg-gray-50 px-4 py-2 rounded-lg  ">
-                    <!-- Social Media Links -->
+                 
                     <h3 class=" font-semibold  text-gray-800">Connect with John</h3>
                     <div class="flex items-center gap-4 text-gray-900">
-                      <!-- Twitter -->
+                    
                       <a href="" target="_blank"
                         class=" px-3 py-2 rounded-full transition duration-300">
                         <i class="fab fa-twitter "></i>
                       </a>
-                      <!-- Facebook -->
+                     
                       <a href="" target="_blank"
                         class="px-3 py-2 rounded-full   transition duration-300">
                         <i class="fab fa-facebook-f  "></i>
                       </a>
-                      <!-- LinkedIn -->
+                      
                       <a href="" target="_blank"
                         class=" px-3 py-2 rounded-full  transition duration-300">
                         <i class="fab fa-linkedin-in "></i>
@@ -113,8 +168,8 @@
                 </div>
               </div>
             </div>
-          </section> 
-        </main>
+          </section>  -->
+    </main>
 
         <footer></footer> 
     
