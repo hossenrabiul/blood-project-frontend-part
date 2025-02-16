@@ -1,7 +1,11 @@
 body {
     font-family: Arial, sans-serif;
 }
-
+.ban-img{
+    width: 400px;
+    height: 400px;
+  
+}
 .icon {
     display: inline-block;
     color: white;
@@ -80,3 +84,5 @@ body {
     width: 100%;
     border-radius: 10px;
 }
+
+
